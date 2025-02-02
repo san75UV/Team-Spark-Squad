@@ -42,15 +42,16 @@ Hardware:
 * 3V DC water pump
 * BD140 PNP transistor
 * Switch
+* 1Kohm resistor
+* Buzzer
+* 3.7V Li ion battery
+* Breadboard
+* Jumper wires
 
 Team Contributions :
 
 * Sandra U V - Simulation of circuits using Tinkercad
 * Josly Ann Jojo - Coding
 * Agreesha S - Connection of the hardware
-* 1Kohm resistor
-* Buzzer
-* 3.7V Li ion battery
-* Breadboard
-* Jumper wires
+
 
