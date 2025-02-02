@@ -1,42 +1,41 @@
-# Team-Spark-Squad
-//Define pin connections
-const int motorPin = 9;     // PWM output to control motor speed
-const int buzzerPin = 8;    // Digital output for buzzer
-const int irSensorPin = 3;  // Input pin for IR sensor
+AUTOMATIC FIRE EXTINGUISHER AND ALERT SYSTEM 
+Basic Details
 
-void setup() 
-{
-  // Initialize serial communication for debugging
-  Serial.begin(9600);
+Team Name : SPARK SQUAD 
+TEAM MEMBERS
+* Member 1: Agreesha S - Mar Athanasius College of Engineering, Kothamangalam
+* Member 2: Josly Ann Jojo - Mar Athanasius College of Engineering, Kothamangalam
+* Member 3: Sandra U V - Mar Athanasius College of Engineering, Kothamangalam
 
-  // Set pin modes
-  pinMode(motorPin, OUTPUT);  
-  pinMode(buzzerPin, OUTPUT);
-  pinMode(irSensorPin, INPUT);
-}
+Hosted Project Link : https://www.tinkercad.com/things/d6FkpWAkfxD/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=8ERvx6wqfXkUu9BUesK7tSU7hI9iJ79vG1d-lseEhmY
 
-void loop() 
-{
-  int irSensorState = digitalRead(irSensorPin);
+PROJECT DESCRIPTION:
+This project showcases an automatic fire extinguisher system using an Arduino Uno, an IR sensor, a water pump, and a buzzer. The IR sensor detects the presence of fire or high temperatures and sends a signal to the Arduino, which activates the water pump to extinguish the fire and triggers the buzzer for an alert. A switch allows for manual control or system reset, while a 3.7V battery powers the components efficiently. The inclusion of a 1kΩ resistor ensures proper current regulation, making the system safe and reliable for small-scale fire safety applications.
 
-  // Print states for debugging
-  Serial.print(" | IR Sensor: ");
-  Serial.println(irSensorState);
+PROBLEM STATEMENT:
+In the event of a fire outbreak, quick and effective response is crucial to minimize damage and prevent loss of life. Traditional fire extinguishing methods require human intervention, which can be dangerous and time-consuming. In scenarios where access is limited, or human presence poses a risk, there is a need for an autonomous fire extinguishing system that can detect, analyze, and respond to fire incidents without the need for human intervention. This system should be capable of operating in various environments, including urban settings, industrial sites, and remote areas, ensuring prompt and safe fire suppression.
 
- if(irSensorState == HIGH) 
- {
-    digitalWrite(motorPin, HIGH); // Full speed
-    digitalWrite(buzzerPin, HIGH);
-    Serial.println("Motor ON | Buzzer ON");
-    delay(100);
-  } 
-  else 
-  {
-    digitalWrite(motorPin, LOW);   // Stop motor
-    digitalWrite(buzzerPin, LOW);
-    Serial.println("Motor OFF | Buzzer OFF");
-    delay(100);
-  }
+SOLUTION:
+By analysing the problem statement, we tried to solve this problem by developing a automatic fire extinguisher system which can detect the presence of fire using sensors, which can send signals, which in turn activates the alert and extinguisher system. We can integrate this into large scale applications using Programmable Logic Controllers, Wifi Modules, Camera Modules etc. for early detection, quick response and automation.
 
-  delay(100); // Small delay for stability
-}
+TECHNICAL DETAILS
+Technologies and Components used
+
+Software:
+* Language: C, C++
+* Framework: Arduino IDE
+* Simulation: Tinkercad
+* Tools used: ChatGPT, Claude AI, Perplexity AI, Copilot, Thingspeak
+  
+Hardware:
+* Arduino Uno
+* IR sensor
+* 3V DC water pump
+* BD140 PNP transistor
+* Switch
+* 1Kohm resistor
+* Buzzer
+* 3.7V Li ion battery
+* Breadboard
+* Jumper wires
+
