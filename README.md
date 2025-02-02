@@ -2,7 +2,8 @@ AUTOMATIC FIRE EXTINGUISHER AND ALERT SYSTEM
 
 Basic Details
 
-Team Name : SPARK SQUAD 
+Team Name : SPARK SQUAD
+
 TEAM MEMBERS
 
 * Member 1: Agreesha S - Mar Athanasius College of Engineering, Kothamangalam
